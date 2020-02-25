@@ -1,0 +1,44 @@
+.common-title
+    font-family: 'Roboto-Black'
+    font-size: 27px
+    line-height: 18px
+    font-weight: 700
+    text-transform: uppercase
+    color: #313131
+    margin-bottom: 3%
+    &:after
+      content: ''
+      background: url('../img/line.png') center no-repeat
+      display: block
+      height: 40px
+.product
+    font-family: 'Roboto-Black'
+    text-align: center
+    padding: 3% 0
+    &-block
+        flex-basis: 40%
+        display: flex
+        flex-direction: column
+        margin-bottom: 30px
+        &_img
+            flex-basis: 90%
+            margin-bottom: 4%
+            img 
+                height: 100%
+        &_title
+            font-family: 'Roboto-Medium'
+            font-size: 20px
+            line-height: 19px
+            font-weight: 500
+            color: #313131
+            margin-bottom: 6%
+        &_buttons
+            .button_o
+                width: 30%
+                margin-right: 4%
+                color: #C0BCB6
+                background-color: transparent
+                border: 1px solid #C0BCB6
+                &:hover
+                    background-color: #FF9D00
+                    color: white

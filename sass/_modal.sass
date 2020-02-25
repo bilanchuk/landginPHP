@@ -1,0 +1,77 @@
+.modal-wrap
+    display: none
+    position: fixed
+    top: 0
+    z-index: 3
+    width: 100vw
+    height: 100vh
+    background-color: rgba(0, 0, 0, 0.4)
+    .modal
+        font-family: 'Roboto-Medium'
+        display: none
+        left: 25%
+        top: 25%
+        width: 50%
+        z-index: 4
+        overflow: visible
+        color: #ffffff
+        &-header
+            font-size: 30px
+            line-height: 22px
+            display: block
+            font-weight: 500
+            text-transform: uppercase
+            text-align: center
+            background-color: #FF9D00
+            border: none
+        &_exit
+            position: absolute
+            top: -28px        
+            right: -10px
+            color: white
+            font-size: 35px
+            z-index: 5
+            cursor: pointer
+        &-form
+            background: url('../img/modal_bg.jpg') no-repeat
+            background-size: cover
+            padding: 5% 10%
+            text-align: center
+            &_title
+                font-family: 'Roboto-Thin'
+                font-size: 27px
+                line-height: 27px
+                font-weight: 400
+                margin-bottom: 2%
+                &-small
+                    display: block
+                    font-size: 21px
+            &_label
+                display: block
+                font-family: 'Roboto-Thin'
+                font-size: 17px
+                line-height: 30px
+                font-weight: 300
+            &_tel
+                padding: 0px 5px
+                width: 60%
+                height: 43px
+                &::placeholder
+                    opacity: 0.7
+                    font-size: 14px
+                    line-height: 42px
+                    font-weight: 300
+            &_small
+                font-family: 'Roboto-Thin'
+                font-size: 12px
+                line-height: 30px
+            .button
+                width: 28%
+                margin-left: 10px
+                position: relative
+                bottom: 3px
+            
+        
+
+    
+

@@ -1,0 +1,90 @@
+.mobile-menu_list
+    position: fixed
+    z-index: 8
+    height: 100vh
+    width: 0vw
+    overflow: hidden
+    display: flex
+    background: rgba(#FF9D00,0.8)
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    transition: all .8s
+    .menu-item
+        border: none
+        padding: 5px
+        a
+            font-family: 'Roboto-Medium' 
+            font-size: 15px
+            text-shadow: 4px 3px 11px rgba(0, 0, 0, 1)
+        &:hover
+            text-align: center
+            width: 100%
+            text-shadow: none
+            background: rgba(255, 255, 255, 0.8)          
+.menu-mobile
+    box-sizing: border-box
+    position: fixed
+    cursor: pointer
+    display: none
+    background-color: rgba(white,.8)
+    border-radius: 50%
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+    width: 40px
+    height: 40px
+    z-index: 9
+    left: 5px
+    top: 1.2vh
+    span,span:after,span:before
+        transition: all 0.4s
+        height: 3px
+        width: 20px
+        position: absolute
+        background-color: black
+        left: 50%
+        margin-left: -25%
+        top: 50%
+        margin-top: -1px
+    span:after
+        content: ''
+        margin-top: -36%
+        margin-left: -48%
+    span:before
+        content: ''
+        margin-top: 24%
+        margin-left: -48%
+
+.menu-mobile_active
+    background-color: transparent !important
+    &::after
+        transform: rotate(-45deg)
+        margin-top: -1px !important 
+        margin-left: -10px !important
+    &::before
+        transform: rotate(45deg)
+        margin-top: -1px !important 
+        margin-left: -10px !important 
+.menu
+    text-align: center
+    background-color: #373737
+    padding: 13px 0
+    &-item
+        border-right: 1px dotted #5F5F5F
+        transition: 0.6s ease
+        &:last-child
+            border: none
+        &:hover
+            flex-basis: 8%
+        &_big
+            flex-basis: 5%
+        a
+            font-family: 'Roboto-Medium'
+            font-size: 12px
+            line-height: 22px
+            font-weight: 400
+            text-transform: uppercase
+            color: #ffffff
+            text-decoration: none
+            &:hover
+                color: #FF9D00
+                font-family: 'Roboto-Black'
